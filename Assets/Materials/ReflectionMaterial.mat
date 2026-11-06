@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: MirrorReflection
+  m_Name: ReflectionMaterial
   m_Shader: {fileID: 4800000, guid: 870c82a60b9a22915a65332f5007098b, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -44,7 +44,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 8400000, guid: 1bf96793103da8471a8d04f03e0d440f, type: 2}
+        m_Texture: {fileID: 8400000, guid: f6ec98ff62a73934cbf492bae2ed8213, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
