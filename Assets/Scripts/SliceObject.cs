@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using EzySlice;
+using UnityEngine.XR.Interaction.Toolkit;
+
 public class SliceObject: MonoBehaviour {
     public Transform startSlicePoint;
     public Transform endSlicePoint;
@@ -34,6 +36,8 @@ public class SliceObject: MonoBehaviour {
                 crossSectionMaterial);
             SetupSlicedComponent(loverHull, target);
             Destroy(target);
+            Destroy(upperHull, 30);
+            Destroy(loverHull, 30);
         }
     }
     public void SetupSlicedComponent(GameObject slicedObject,
@@ -42,6 +46,7 @@ public class SliceObject: MonoBehaviour {
         MeshCollider collider =
             slicedObject.AddComponent < MeshCollider > ();
         collider.convex = true;
+        XRGrabInteractable interactable = slicedObject.AddComponent <XRGrabInteractable> ();
         slicedObject.transform.position =
             target.transform.position;
     }
